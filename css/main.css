@@ -60,22 +60,24 @@ nav ul a  {
     text-align: center;
   }
 
-
-
   nav ul {
-    padding: 0 3rem;
-    margin: .9rem;
+    padding: .5rem .75rem;
+    width: 93%;
+    /* margin: .9rem; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     text-align: center;
+    justify-content: space-around;
   }
 
   nav a {
-    padding: 0;
-    text-align: center;
-    margin: .9rem;
-    /* padding: .5em 6em; */
+    padding: .3rem 0 .5rem;
+  }
+
+  nav li {
+    padding: .5rem .75rem
+    /* margin: .9rem; */
   }
 
 }
