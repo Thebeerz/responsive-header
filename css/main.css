@@ -27,6 +27,7 @@ header {
 }
 
 h1 {
+  font-size: 2rem;
   font-weight: bold;
   color: #fff;
   margin: 0;
@@ -34,7 +35,8 @@ h1 {
 }
 
 nav a {
-  padding: .75rem;
+  font-size: 1.125rem;
+  padding: .5rem .75rem;
   display: block;
   text-align: left;
   color: #6c8fe0;
@@ -50,4 +52,90 @@ nav ul {
 
 nav ul a  {
   text-decoration: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+  h1 {
+    text-align: center;
+  }
+
+
+
+  nav ul {
+    padding: 0 3rem;
+    margin: .9rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  nav a {
+    padding: 0;
+    text-align: center;
+    margin: .9rem;
+    /* padding: .5em 6em; */
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .section-icon {
+    order: 10;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section-letter, .section-icon {
+    width: 13%;
+    margin: 1rem;
+    padding: 0;
+  }
+
+  .section-body {
+    width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  .wrapper {
+    padding: 0;
+  }
+
+  .section-letter, .section-icon {
+    width: 15%;
+    margin: 1rem;
+  }
+
+  .section-body {
+    width: 55%;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
 }
